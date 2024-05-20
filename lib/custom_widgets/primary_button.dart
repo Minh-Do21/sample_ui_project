@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
-import 'package:mor_flutter_project/resources/barrel_const.dart';
-import 'package:mor_flutter_project/configs/size_config.dart';
-import 'package:mor_flutter_project/utils/utils.dart';
+import 'package:sample_ui_project/resources/barrel_const.dart';
+import 'package:sample_ui_project/configs/size_config.dart';
+import 'package:sample_ui_project/utils/utils.dart';
 
 class PrimaryButton extends StatelessWidget {
   const PrimaryButton({

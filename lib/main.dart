@@ -1,8 +1,8 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:mor_flutter_project/main_app.dart';
+import 'package:sample_ui_project/main_app.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:mor_flutter_project/screens/barrel_screens.dart';
+import 'package:sample_ui_project/screens/barrel_screens.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

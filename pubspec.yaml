@@ -1,4 +1,4 @@
-name: mor_flutter_project
+name: sample_ui_project
 description: A new Flutter project from MOR.
 publish_to: "none"
 
@@ -43,6 +43,10 @@ dependencies:
   flutter_spinkit: 5.2.0
   zoom_tap_animation: 1.1.0
   getwidget: 3.1.1
+
+  gap: 3.0.1
+  flutter_card_swiper: 7.0.0
+  dropdown_button2: 2.3.9
 
   cupertino_icons: ^1.0.2
 

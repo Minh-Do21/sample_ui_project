@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:one_context/one_context.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 import 'package:easy_localization/easy_localization.dart';
-import 'package:mor_flutter_project/screens/app_router.dart';
+import 'package:sample_ui_project/screens/app_router.dart';
 
 class MainApp extends StatelessWidget {
   const MainApp({Key? key, required this.firstScreen}) : super(key: key);

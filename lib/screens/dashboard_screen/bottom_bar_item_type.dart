@@ -1,4 +1,4 @@
-import 'package:mor_flutter_project/screens/home_screen/home_screen.dart';
+import 'package:sample_ui_project/screens/home_screen/home_screen.dart';
 
 import 'package:flutter/material.dart';
 

@@ -2,7 +2,7 @@ import 'dart:developer';
 
 import 'package:dio/dio.dart';
 import 'package:dio_http_cache/dio_http_cache.dart';
-import 'package:mor_flutter_project/configs/config_environment.dart';
+import 'package:sample_ui_project/configs/config_environment.dart';
 
 class DioProvider {
   static DioCacheManager? _manager;

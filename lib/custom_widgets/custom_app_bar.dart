@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:mor_flutter_project/resources/barrel_const.dart';
-import 'package:mor_flutter_project/configs/size_config.dart';
+import 'package:sample_ui_project/resources/barrel_const.dart';
+import 'package:sample_ui_project/configs/size_config.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar({

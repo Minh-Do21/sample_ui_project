@@ -1,4 +1,4 @@
-# Mor Project Base
+# Sample UI Project
 
 A new Flutter project.
 

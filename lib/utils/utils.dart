@@ -1,6 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:mor_flutter_project/resources/barrel_const.dart';
+import 'package:sample_ui_project/resources/barrel_const.dart';
 
 const appDefaultGradient = LinearGradient(
   colors: [COLOR_CONST.purpleHeart, COLOR_CONST.jaffa],

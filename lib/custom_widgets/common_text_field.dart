@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:mor_flutter_project/configs/size_config.dart';
+import 'package:sample_ui_project/configs/size_config.dart';
 
 import '../resources/barrel_const.dart';
 

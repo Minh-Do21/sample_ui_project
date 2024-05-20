@@ -1,9 +1,9 @@
 import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:mor_flutter_project/resources/barrel_const.dart';
-import 'package:mor_flutter_project/custom_widgets/custom_loading_indicator.dart';
-import 'package:mor_flutter_project/configs/size_config.dart';
+import 'package:sample_ui_project/resources/barrel_const.dart';
+import 'package:sample_ui_project/custom_widgets/custom_loading_indicator.dart';
+import 'package:sample_ui_project/configs/size_config.dart';
 
 class LoadingShowAble {
   static final LoadingShowAble _instance = LoadingShowAble.internal();

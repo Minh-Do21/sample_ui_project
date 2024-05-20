@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.morapp">
    <application
-        android:label="morapp"
+        android:label="sample UI"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

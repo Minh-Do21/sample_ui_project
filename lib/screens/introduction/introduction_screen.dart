@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mor_flutter_project/resources/barrel_const.dart';
-import 'package:mor_flutter_project/custom_widgets/primary_button.dart';
-import 'package:mor_flutter_project/screens/app_router.dart';
-import 'package:mor_flutter_project/configs/size_config.dart';
+import 'package:sample_ui_project/resources/barrel_const.dart';
+import 'package:sample_ui_project/custom_widgets/primary_button.dart';
+import 'package:sample_ui_project/screens/app_router.dart';
+import 'package:sample_ui_project/configs/size_config.dart';
 import 'components/introduction_content.dart';
 import 'package:easy_localization/easy_localization.dart';
 

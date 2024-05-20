@@ -1,4 +1,4 @@
-import 'package:mor_flutter_project/services/api/base_api.dart';
+import 'package:sample_ui_project/services/api/base_api.dart';
 
 class CommonRepository {
   APIDataStore apiDataStore = APIDataStore();
