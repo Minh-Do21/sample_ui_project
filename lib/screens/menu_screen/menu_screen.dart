@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../data/model/item_menu.dart';
 import '../../resources/color_const.dart';
 import '../app_router.dart';
@@ -43,6 +42,10 @@ class _MenuScreenState extends State<MenuScreen> {
       ItemMenu(
         title: "Intro Popup",
         routeSettings: AppRouter.INTRO_POPUP_SCREEN
+      ),
+      ItemMenu(
+        title: "Chat",
+        routeSettings: AppRouter.CHAT_SCREEN
       )
     ];
   }

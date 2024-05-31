@@ -11,3 +11,8 @@ export 'virtual_keyboard_screen/virtual_keyboard_screen.dart';
 export 'wrap_list_screen.dart/wrap_list_screen.dart';
 export 'drop_box_screen/drop_box_screen.dart';
 export 'intro_popup_screen/intro_popup_screen.dart';
+export 'chat_screen/chat_screen.dart';
+export '../data/argument/browser_argument.dart';
+export 'browser_screen/browser_screen.dart';
+export 'chat_screen/components/preview_image.dart';
+export '../data/model/message_model.dart';

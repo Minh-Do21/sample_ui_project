@@ -1,54 +1,15 @@
 import 'dart:developer';
 
 import 'package:dio/dio.dart';
-import 'package:dio_http_cache/dio_http_cache.dart';
 import 'package:sample_ui_project/configs/config_environment.dart';
 
 class DioProvider {
-  static DioCacheManager? _manager;
-  static DioCacheManager? _managerPost;
-
-  static DioCacheManager getCacheManager() {
-    _manager ??= DioCacheManager(CacheConfig(
-      baseUrl: ConfigEnvironment.baseUrl,
-    ));
-    return _manager!;
-  }
-
-  static DioCacheManager getCacheManagerPost() {
-    _managerPost ??= DioCacheManager(CacheConfig(
-      baseUrl: ConfigEnvironment.baseUrl,
-    ));
-    return _managerPost!;
-  }
-
-  static Dio instance() {
+   static Dio instance() {
     final dio = Dio()
       ..options.baseUrl = ConfigEnvironment.baseUrl
-      ..options.connectTimeout = 300000
-      ..options.receiveTimeout = 300000
-      ..interceptors.add(HttpLogInterceptor())
-      ..interceptors.add(DioCacheManager(
-        CacheConfig(
-          baseUrl: ConfigEnvironment.baseUrl,
-        ),
-      ).interceptor);
-
-    return dio;
-  }
-
-  static Dio instancePost({required String baseUrl}) {
-    final dio = Dio()
-      ..options.baseUrl = baseUrl
-      ..options.connectTimeout = 300000
-      ..options.receiveTimeout = 300000
-      ..interceptors.add(HttpLogInterceptor())
-      ..interceptors.add(DioCacheManager(
-        CacheConfig(
-          baseUrl: baseUrl,
-        ),
-      ).interceptor);
-
+      ..options.connectTimeout = const Duration(seconds: 30)
+      ..options.receiveTimeout = const Duration(seconds: 30)
+      ..interceptors.add(HttpLogInterceptor());
     return dio;
   }
 }

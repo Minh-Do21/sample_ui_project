@@ -32,7 +32,7 @@ class _IntroPopupScreenState extends State<IntroPopupScreen> with SingleTickerPr
     int pageIndex = 1;
     double angle = -0.12;
 
-    final ValueNotifier<int> isInputbarcode = ValueNotifier<int>(pageIndex);
+    final ValueNotifier<int> changePageNoti = ValueNotifier<int>(pageIndex);
 
     // ignore: use_build_context_synchronously
     await showDialog(
@@ -40,7 +40,7 @@ class _IntroPopupScreenState extends State<IntroPopupScreen> with SingleTickerPr
       barrierDismissible: false,
       builder: (mContext) => Center(
         child: ValueListenableBuilder<int>(
-            valueListenable: isInputbarcode,
+            valueListenable: changePageNoti,
             builder: (BuildContext context, int pageIndex, Widget? child) {
             return Column(
               mainAxisSize: MainAxisSize.min,
@@ -115,7 +115,7 @@ class _IntroPopupScreenState extends State<IntroPopupScreen> with SingleTickerPr
 
                       _controller.repeat(reverse: true);
                       
-                      isInputbarcode.value = 2;
+                      changePageNoti.value = 2;
                       angle = 0.12;
                     }else{
                       Navigator.pop(mContext);

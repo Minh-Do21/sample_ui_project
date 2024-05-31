@@ -16,6 +16,9 @@ class AppRouter {
   static const String WRAP_LIST_SCREEN = 'wrap_list_screen';
   static const String DROP_BOX_SCREEN = 'drop_box_screen';
   static const String INTRO_POPUP_SCREEN = 'intro_popup_screen';
+  static const String CHAT_SCREEN = 'chat_screen';
+  static const String BROWSER_SCREEN = 'browser_screen';
+  static const String PREVIEW_IMAGE = 'preview_image';
 
   // Generate Router
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -48,6 +51,16 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const DropBoxScreen());
       case INTRO_POPUP_SCREEN:
         return MaterialPageRoute(builder: (_) => const IntroPopupScreen());
+      case CHAT_SCREEN:
+        return MaterialPageRoute(builder: (_) => ChatScreen());
+      case BROWSER_SCREEN:
+        return MaterialPageRoute(
+            builder: (_) =>
+                BrowserScreen(args: settings.arguments as BrowserArgument));
+       case PREVIEW_IMAGE:
+        return MaterialPageRoute(
+            builder: (_) =>
+                PreviewImage(messageModel: settings.arguments as MessageModel,));
 
       default:
         return MaterialPageRoute(
